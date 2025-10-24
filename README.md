@@ -1,4 +1,4 @@
-# 🎓 Comprehensive Scholarship Application System
+# 🎓Scholarship Application System
 
 A modern, full-stack scholarship management platform built with React, Node.js, and MongoDB. This system provides a complete solution for managing scholarship programs, processing applications, and facilitating the review process with a professional multi-step application wizard.
 
@@ -59,7 +59,6 @@ A modern, full-stack scholarship management platform built with React, Node.js, 
 - **React Router 6** - Routing
 - **Zustand** - State management
 - **React Hook Form** - Form handling
-- **React Hot Toast** - Notifications
 
 ### Backend
 - **Node.js** - Runtime
@@ -69,12 +68,11 @@ A modern, full-stack scholarship management platform built with React, Node.js, 
 - **JWT** - Authentication
 - **bcryptjs** - Password hashing
 - **Multer** - File uploads
-- **AWS S3** - File storage (optional)
 
 ## Project Structure
 
 ```
-buddy4study-clone/
+Scholorship/
 ├── backend/                 # Backend API
 │   ├── config/             # Database and app configuration
 │   ├── controllers/        # Request handlers
@@ -94,171 +92,4 @@ buddy4study-clone/
 ├── public/               # Static assets
 └── README.md            # This file
 ```
-
-## Getting Started
-
-### Prerequisites
-- Node.js 18+ and npm
-- MongoDB (local or cloud)
-- AWS S3 account (optional, for file uploads)
-
-### Installation
-
-1. **Clone the repository**
-   ```bash
-   git clone <repository-url>
-   cd buddy4study-clone
-   ```
-
-2. **Install frontend dependencies**
-   ```bash
-   npm install
-   ```
-
-3. **Install backend dependencies**
-   ```bash
-   cd backend
-   npm install
-   cd ..
-   ```
-
-4. **Set up environment variables**
-   
-   **Frontend (.env):**
-   ```bash
-   cp .env.example .env
-   # Edit .env with your configuration
-   ```
-   
-   **Backend (backend/.env):**
-   ```bash
-   cp backend/.env.example backend/.env
-   # Edit backend/.env with your configuration
-   ```
-
-5. **Start MongoDB**
-   - Local: Start your MongoDB service
-   - Cloud: Ensure your MongoDB Atlas cluster is running
-
-### Running the Application
-
-1. **Start the backend server**
-   ```bash
-   cd backend
-   npm run dev
-   ```
-   Server will run on http://localhost:5000
-
-2. **Start the frontend development server**
-   ```bash
-   npm run dev
-   ```
-   App will run on http://localhost:5173
-
-## Environment Variables
-
-### Frontend (.env)
-- `VITE_API_URL` - Backend API URL
-- `VITE_APP_NAME` - Application name
-- `VITE_APP_VERSION` - Application version
-
-### Backend (backend/.env)
-- `PORT` - Server port
-- `NODE_ENV` - Environment (development/production)
-- `MONGODB_URI` - MongoDB connection string
-- `JWT_SECRET` - JWT signing secret
-- `JWT_EXPIRE` - JWT expiration time
-- `AWS_ACCESS_KEY_ID` - AWS access key (optional)
-- `AWS_SECRET_ACCESS_KEY` - AWS secret key (optional)
-- `AWS_REGION` - AWS region (optional)
-- `AWS_BUCKET_NAME` - S3 bucket name (optional)
-- `EMAIL_HOST` - SMTP host (optional)
-- `EMAIL_PORT` - SMTP port (optional)
-- `EMAIL_USER` - SMTP username (optional)
-- `EMAIL_PASS` - SMTP password (optional)
-
-## API Endpoints
-
-### Authentication
-- `POST /api/auth/register` - User registration
-- `POST /api/auth/login` - User login
-- `GET /api/auth/profile` - Get user profile
-- `PUT /api/auth/profile` - Update user profile
-
-### Scholarships
-- `GET /api/scholarships` - Get all scholarships (with pagination and filters)
-- `GET /api/scholarships/:id` - Get single scholarship
-- `POST /api/scholarships` - Create scholarship (admin/organization)
-- `PUT /api/scholarships/:id` - Update scholarship
-- `DELETE /api/scholarships/:id` - Delete scholarship
-
-### Applications
-- `GET /api/applications` - Get user's applications
-- `POST /api/applications` - Apply for scholarship
-- `PUT /api/applications/:id` - Update application status
-- `DELETE /api/applications/:id` - Withdraw application
-
-### Organizations
-- `GET /api/organizations` - Get all organizations
-- `GET /api/organizations/:id` - Get single organization
-- `POST /api/organizations` - Create organization (admin)
-- `PUT /api/organizations/:id` - Update organization
-
-## Database Schema
-
-### User Model
-- Personal information
-- Authentication credentials
-- Role-based access (student/admin)
-- Profile details and preferences
-
-### Scholarship Model
-- Comprehensive scholarship details
-- Eligibility criteria
-- Application requirements
-- Status and timeline management
-
-### Application Model
-- User-scholarship relationship
-- Application status tracking
-- Document uploads
-- Review and feedback system
-
-### Organization Model
-- Organization profile
-- Contact information
-- Verification status
-- Associated scholarships
-
-## Contributing
-
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-## License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
-
-## Support
-
-For support, email support@buddy4study.com or create an issue in the repository.
-
-## Acknowledgments
-
-- Inspired by Buddy4Study platform
-- Built with modern web technologies
-- Designed for scalability and maintainability+ Vite
-
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
